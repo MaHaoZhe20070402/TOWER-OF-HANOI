@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi - 3D Learning Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Tower of Hanoi (3D)</h1>
+            <div class="controls">
+                <div class="disk-count">
+                    <label for="diskInput">Disks: </label>
+                    <input type="number" id="diskInput" min="3" max="8" value="5">
+                </div>
+                <div class="move-counter">Moves: <span id="moveCount">0</span></div>
+                <button id="resetBtn">Reset</button>
+                <button id="autoSolveBtn">Auto Solve</button>
+            </div>
+        </header>
+
+        <div class="game-board">
+            <div class="peg" id="pegA" data-index="0">
+                <div class="peg-base"></div>
+            </div>
+            <div class="peg" id="pegB" data-index="1">
+                <div class="peg-base"></div>
+            </div>
+            <div class="peg" id="pegC" data-index="2">
+                <div class="peg-base"></div>
+            </div>
+        </div>
+
+        <div class="warning" id="warning"></div>
+        <div class="victory" id="victory">🎉 You Win! 🎉</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
